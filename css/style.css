@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Start Global Style */
 :root {
-    --main-color:#224F34;
-    --light-green-color:#267D49;
-    --bg-color:#C2EFD4;
-    --button-color:#A3F3BE;
-    --white-color:#ffffff;
-    --secondary-color:#373737;
-    --light-black-color:#454545;
-    --grey-color:#6F6F6F;
-    --bg-image-color:#6bc785;
+    --main-color: #224F34;
+    --light-green-color: #267D49;
+    --bg-color: #C2EFD4;
+    --button-color: #A3F3BE;
+    --white-color: #ffffff;
+    --secondary-color: #373737;
+    --light-black-color: #454545;
+    --grey-color: #6F6F6F;
+    --bg-image-color: #6bc785;
 }
 
 * {
@@ -23,79 +24,81 @@
 
 
 body {
-font-family: 'Poppins', sans-serif;
-/* font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif;
 font-family: 'Rufina', serif;
 font-family: "ELEPHNT"; */
 }
 
 ul {
-list-style: none;
+    list-style: none;
 }
 
-li{
+li {}
 
-}
-
-a{
-text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 @font-face {
-src:("../fonts/ELEPHNT.TTF");
-font-family: "ELEPHNT", serif;
+    src: ("../fonts/ELEPHNT.TTF");
+    font-family: "ELEPHNT", serif;
 }
 
-.heading-section{
+.heading-section {
     display: flex;
     flex-direction: column;
     gap: 37px;
     text-align: center;
 }
-.heading-section h4{
+
+.heading-section h4 {
     color: var(--main-color);
     font-family: 'Roboto Slab', serif;
     font-size: 64px;
     font-weight: 500;
 }
-.heading-section span{
+
+.heading-section span {
     color: var(--main-color);
     font-size: 22px;
     font-weight: 500;
 }
+
 /* End Global Style */
 
 /* Start Header Style */
-header{
+header {
     background-color: var(--bg-color);
 }
 
-.container{
-    width:80%;
+.container {
+    width: 80%;
     margin: 0 auto;
 }
 
-.header-wrapper{
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:55px 0;
+    padding: 55px 0;
 }
 
 
 .header-wrapper .logo h2 {
-font-family: "Elephant", serif;
-font-size: 44px;
-font-weight: 700;
-color: var(--main-color);
+    font-family: "Elephant", serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--main-color);
 }
 
-.header-wrapper .header-links nav ul{
+.header-wrapper .header-links nav ul {
     display: flex;
     align-items: center;
-    gap:57px;
+    gap: 57px;
 }
-.header-wrapper .header-links nav ul a{
+
+.header-wrapper .header-links nav ul a {
     color: var(--main-color);
     font-family: Poppins;
     font-size: 22px;
@@ -103,7 +106,7 @@ color: var(--main-color);
     text-transform: uppercase;
 }
 
-.header-wrapper .login-button a{
+.header-wrapper .login-button a {
     display: inline-block;
     padding: 11px 41px;
     border-radius: 3px;
@@ -113,40 +116,46 @@ color: var(--main-color);
     text-transform: uppercase;
 
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
     color: var(--main-color);
     font-size: 35px;
     font-weight: bold;
 }
+
 /* End Header Style */
 
 /* Hero Section Style */
-.section-one{
+.section-one {
     margin-top: -1px;
     background-color: var(--bg-color);
-    padding-top: 74px ;
+    padding-top: 74px;
     padding-bottom: 166px;
     margin-bottom: 114px;
 }
-.hero-wrapper{
+
+.hero-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .hero-wrapper .hero-details {
     display: flex;
     flex-direction: column;
     width: 649px;
 }
-.hero-wrapper .hero-details .hero-title{
+
+.hero-wrapper .hero-details .hero-title {
     color: var(--main-color);
     font-family: "Rufina";
     font-size: 86px;
     font-weight: 700;
     margin-bottom: 27.21px;
 }
-.hero-wrapper .hero-details .hero-description{
+
+.hero-wrapper .hero-details .hero-description {
     color: var(--light-green-color);
     font-family: "Poppins";
     font-size: 24px;
@@ -155,7 +164,8 @@ color: var(--main-color);
     line-height: 220%;
     margin-bottom: 54.43px;
 }
-.hero-wrapper .hero-details .explore-button a{
+
+.hero-wrapper .hero-details .explore-button a {
     padding: 22.17px 59px;
     border-radius: 3px;
     background: var(--main-color);
@@ -168,110 +178,125 @@ color: var(--main-color);
 }
 
 
-    .hero-image{
+.hero-image {
     width: 570px;
     height: 717px;
-    }
-    .hero-image img{
+}
+
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-color: var(--bg-image-color);
-    border-radius:150px 40px 150px 60px;
-    }
+    border-radius: 150px 40px 150px 60px;
+}
+
 /* End Hero Section Style */
 
 
 /* Start selling Section Style */
-.section-two{
+.section-two {
     background-color: var(--white-color);
     margin-bottom: 185px;
 }
-.best-selling-wrapper{
+
+.best-selling-wrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.best-selling-wrapper .cards-wrapper{
+
+.best-selling-wrapper .cards-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 80px;
 }
-.cards-wrapper .card{
+
+.cards-wrapper .card {
     width: 430px;
     display: flex;
     flex-direction: column;
-    gap:51px;
+    gap: 51px;
 }
-.cards-wrapper .card .card-image{
+
+.cards-wrapper .card .card-image {
     width: 100%;
     height: 566px;
     border-radius: 6px;
 }
+
 .cards-wrapper .card:nth-child(1) .card-image {
     width: 100%;
     height: 566px;
     background-color: #93B9A2;
 }
-.cards-wrapper .card:nth-child(2) >.card-image  {
+
+.cards-wrapper .card:nth-child(2)>.card-image {
     width: 100%;
     height: 566px;
     background-color: #A9D4BA;
 }
-.cards-wrapper  .card:nth-child(3) .card-image{
+
+.cards-wrapper .card:nth-child(3) .card-image {
     width: 100%;
     height: 566px;
     background-color: #CADCD0;
 }
 
 
-.cards-wrapper .card .card-image img{
+.cards-wrapper .card .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.cards-wrapper .card .card-details{
-    width:313px;
+
+.cards-wrapper .card .card-details {
+    width: 313px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
 }
-.cards-wrapper .card .card-details span{
-color: var(--secondary-color);
-text-align: center;
-font-size: 22px;
-font-weight: 600;
+
+.cards-wrapper .card .card-details span {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
 
 }
-.cards-wrapper .card .card-details .product-details{
+
+.cards-wrapper .card .card-details .product-details {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.cards-wrapper .card .card-details .product-details .price{
+
+.cards-wrapper .card .card-details .product-details .price {
     color: var(--light-black-color);
     font-size: 22px;
     font-weight: 500;
 }
 
-.cards-wrapper .card .card-details .product-details .rate{
-display: flex;
-align-items: center;
-gap:9px;
+.cards-wrapper .card .card-details .product-details .rate {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 }
-.cards-wrapper .card .card-details .product-details .rate span{
+
+.cards-wrapper .card .card-details .product-details .rate span {
     color: var(--light-black-color);
     font-size: 22px;
     font-weight: 500;
 }
+
 .see-all {
     display: inline-block;
     padding: 16px 55px;
     display: flex;
     align-items: center;
-    gap:18px;
+    gap: 18px;
     align-self: center;
     border-radius: 3px;
     border: 2px solid var(--main-color);
@@ -283,6 +308,123 @@ gap:9px;
 
 
 /* End selling Section Style */
+
+
+
+/* Start products Section style */
+.section-three .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 186px;
+}
+
+.products-wrapper .cards-wrapper .card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    margin-bottom: 82px;
+}
+
+.products-wrapper .cards-wrapper .card .card-image {
+    width: 100%;
+    height: 378px;
+    border-radius: 6px;
+}
+
+.products-wrapper .cards-wrapper .card:nth-child(2) .card-image {
+    background-color: #A9D4BA;
+
+}
+
+.products-wrapper .cards-wrapper .card:nth-child(2) .card-image img {
+    transform: translateY(15%);
+
+}
+
+.products-wrapper .cards-wrapper .card:nth-child(8) .card-image {
+    background-color: #CADCD0;
+}
+
+
+.products-wrapper .cards-wrapper .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products-wrapper .cards-wrapper .card .card-details {
+    width: 313px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.products-wrapper .cards-wrapper .card .card-details span {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.cards-wrapper .card .card-details .product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-wrapper .card .card-details .product-details .price {
+    color: var(--light-black-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cards-wrapper .card .card-details .product-details .rate {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.cards-wrapper .card .card-details .product-details .rate span {
+    color: var(--light-black-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* End products Section style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,255 +459,411 @@ gap:9px;
 
 
 /* Start Responsive */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
     /* Start Header responsive */
-    .header-wrapper{
-    padding:20px 0;
-    }   
+    .header-wrapper {
+        padding: 20px 0;
+    }
+
     .header-wrapper .logo h2 {
         font-size: 25px;
         font-weight: 600;
     }
-    .header-links{
-    display: none;
+
+    .header-links {
+        display: none;
     }
-    .login-button{
-    display: none;
+
+    .login-button {
+        display: none;
     }
-    .menu-icon{
-    display: block;
-    font-size: 25px;
-    font-weight: 600;
+
+    .menu-icon {
+        display: block;
+        font-size: 25px;
+        font-weight: 600;
     }
+
     /* End Header responsive */
 
     /* Start Hero Section responsive */
-    .section-one{
-    width: 100%;
-    padding-top: 30px ;
-    padding-bottom: 80px;
+    .section-one {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 80px;
     }
-    .hero-wrapper{
+
+    .hero-wrapper {
         flex-direction: column;
     }
+
     .hero-wrapper .hero-details {
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;
     }
-    .hero-wrapper .hero-details .hero-title{
+
+    .hero-wrapper .hero-details .hero-title {
         font-size: 50px;
         font-weight: 700;
         margin-bottom: 27.21px;
         text-align: center;
     }
-    .hero-wrapper .hero-details .hero-description{
+
+    .hero-wrapper .hero-details .hero-description {
         font-size: 18px;
         width: 100%;
         text-align: center;
     }
-    .hero-wrapper .hero-details .explore-button a{
+
+    .hero-wrapper .hero-details .explore-button a {
         padding: 15px 30px;
         font-size: 18px;
     }
-    .hero-image{
+
+    .hero-image {
         display: none;
     }
+
     /* End Hero Section responsive */
 
 
     /* Start Heading section responsive */
-    .heading-section{
-    gap: 20px;
-    text-align: center;
+    .heading-section {
+        gap: 20px;
+        text-align: center;
     }
-    .heading-section h4{
+
+    .heading-section h4 {
         font-size: 35px;
     }
-    .heading-section span{
+
+    .heading-section span {
         font-size: 18px;
     }
+
     /* End Heading section responsive */
 
     /* Start selling section responsive */
 
-    .section-two{
+    .section-two {
         margin-bottom: 100px;
 
     }
-    .best-selling-wrapper .cards-wrapper{
+
+    .best-selling-wrapper .cards-wrapper {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content:center;
-        gap:1rem;
+        justify-content: center;
+        gap: 1rem;
         margin-top: 60px;
 
     }
-    .cards-wrapper .card{
+
+    .cards-wrapper .card {
         align-self: center;
         flex: 1;
-        gap:35px;
+        gap: 35px;
         margin: 0 5px;
     }
-    .cards-wrapper .card .card-image{
+
+    .cards-wrapper .card .card-image {
         max-height: 470px;
         max-width: 90%;
         margin: 0 auto;
     }
 
 
-    .cards-wrapper .card .card-details{
-        width:280px;
-        gap:6px;
+    .cards-wrapper .card .card-details {
+        width: 280px;
+        gap: 6px;
     }
-    .cards-wrapper .card .card-details span{
-    font-size: 18px;
+
+    .cards-wrapper .card .card-details span {
+        font-size: 18px;
     }
-    .cards-wrapper .card .card-details .product-details .price{
+
+    .cards-wrapper .card .card-details .product-details .price {
         font-size: 16px;
     }
 
-    .cards-wrapper .card .card-details .product-details .rate{
-    gap:4px;
+    .cards-wrapper .card .card-details .product-details .rate {
+        gap: 4px;
     }
-    .cards-wrapper .card .card-details .product-details .rate span{
+
+    .cards-wrapper .card .card-details .product-details .rate span {
         font-size: 16px;
     }
-    .cards-wrapper .card .card-details .product-details .rate  svg{
+
+    .cards-wrapper .card .card-details .product-details .rate svg {
         width: 15px;
     }
 
     .see-all {
-        padding: 10px 30px; 
-        gap:15px;
+        padding: 10px 30px;
+        gap: 15px;
         font-size: 16px;
         margin-top: 50px;
     }
+
     /* End selling section responsive */
+
+    /* Start products section responsive */
+
+    .section-three {
+        margin-bottom: 100px;
+    }
+
+    .products-wrapper .cards-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        gap: 2rem;
+    }
+
+    .products-wrapper .cards-wrapper .card {
+        min-width: 260px;
+        flex: 1 260px;
+        gap: 35px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-image {
+        max-height: 470px;
+    }
+
+
+    .products-wrapper .cards-wrapper .card .card-details {
+        width: 280px;
+        gap: 6px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details span {
+        font-size: 18px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .price {
+        font-size: 16px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate {
+        gap: 4px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate span {
+        font-size: 16px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate svg {
+        width: 15px;
+    }
 }
 
-@media screen and (min-width:  1025px)  and (max-width: 1727px) {
+@media screen and (min-width: 1025px) and (max-width: 1727px) {
 
     /* Start Header responsive */
-    .header-wrapper{
-        padding:25px 0;
+    .header-wrapper {
+        padding: 25px 0;
     }
 
 
     .header-wrapper .logo h2 {
-    font-size: 28px;
-    font-weight: 600;
+        font-size: 28px;
+        font-weight: 600;
     }
 
-    .header-wrapper .header-links nav ul{
+    .header-wrapper .header-links nav ul {
         display: flex;
         align-items: center;
     }
-    .header-wrapper .header-links nav ul a{
+
+    .header-wrapper .header-links nav ul a {
         font-size: 16px;
     }
 
-    .header-wrapper .login-button a{
-        padding:9px 18px;
+    .header-wrapper .login-button a {
+        padding: 9px 18px;
         border-radius: 3px;
         border: 1px solid var(--main-color);
         font-size: 18px;
     }
+
     /* End Header responsive */
 
     /* StartHero Section responsive */
-    .section-one{
-        padding-top: 74px ;
+    .section-one {
+        padding-top: 74px;
         padding-bottom: 166px;
     }
 
     .hero-wrapper .hero-details {
-        width:47%;
+        width: 47%;
     }
-    .hero-wrapper .hero-details .hero-title{
+
+    .hero-wrapper .hero-details .hero-title {
         font-size: 68px;
         font-weight: 700;
         margin-bottom: 25px;
     }
-    .hero-wrapper .hero-details .hero-description{
+
+    .hero-wrapper .hero-details .hero-description {
         font-size: 20px;
         width: 480px;
         line-height: 200%;
         margin-bottom: 50px;
     }
-    .hero-wrapper .hero-details .explore-button a{
+
+    .hero-wrapper .hero-details .explore-button a {
         padding: 20px 50px;
         font-size: 16px;
     }
-    .hero-image{
-    width: 450px;
-    height: 570px;
+
+    .hero-image {
+        width: 450px;
+        height: 570px;
     }
-    /* End Hero Section responsive */   
+
+    /* End Hero Section responsive */
     /* Start Heading section responsive */
-    .heading-section{
-    gap: 20px;
-    text-align: center;
+    .heading-section {
+        gap: 20px;
+        text-align: center;
     }
-    .heading-section h4{
+
+    .heading-section h4 {
         font-size: 35px;
     }
-    .heading-section span{
+
+    .heading-section span {
         font-size: 18px;
     }
+
     /* End Heading section responsive */
 
     /* Start selling section responsive */
 
-    .section-two{
+    .section-two {
         margin-bottom: 100px;
     }
-    .best-selling-wrapper .cards-wrapper{
+
+    .best-selling-wrapper .cards-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 60px;
-        gap:2rem;
+        gap: 2rem;
     }
-    .cards-wrapper .card{
+
+    .cards-wrapper .card {
         width: 385px;
-        gap:35px;
+        gap: 35px;
     }
-    .cards-wrapper .card .card-image{
+
+    .cards-wrapper .card .card-image {
         max-height: 470px;
     }
 
 
-    .cards-wrapper .card .card-details{
-        width:280px;
-        gap:6px;
+    .cards-wrapper .card .card-details {
+        width: 280px;
+        gap: 6px;
     }
-    .cards-wrapper .card .card-details span{
-    font-size: 18px;
+
+    .cards-wrapper .card .card-details span {
+        font-size: 18px;
     }
-    .cards-wrapper .card .card-details .product-details .price{
+
+    .cards-wrapper .card .card-details .product-details .price {
         font-size: 16px;
     }
 
-    .cards-wrapper .card .card-details .product-details .rate{
-    gap:4px;
+    .cards-wrapper .card .card-details .product-details .rate {
+        gap: 4px;
     }
-    .cards-wrapper .card .card-details .product-details .rate span{
+
+    .cards-wrapper .card .card-details .product-details .rate span {
         font-size: 16px;
     }
-    .cards-wrapper .card .card-details .product-details .rate  svg{
+
+    .cards-wrapper .card .card-details .product-details .rate svg {
         width: 15px;
     }
 
     .see-all {
-        padding: 10px 30px; 
-        gap:15px;
+        padding: 10px 30px;
+        gap: 15px;
         font-size: 16px;
         margin-top: 50px;
     }
+
     /* End selling section responsive */
+    /* Start products section responsive */
+
+    .section-three {
+        margin-bottom: 100px;
+    }
+
+    .products-wrapper .cards-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        gap: 2rem;
+    }
+
+    .products-wrapper .cards-wrapper .card {
+        width: 22%;
+        gap: 35px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-image {
+        max-height: 470px;
+    }
+
+
+    .products-wrapper .cards-wrapper .card .card-details {
+        width: 280px;
+        gap: 6px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details span {
+        font-size: 18px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .price {
+        font-size: 16px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate {
+        gap: 4px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate span {
+        font-size: 16px;
+    }
+
+    .products-wrapper .cards-wrapper .card .card-details .product-details .rate svg {
+        width: 15px;
+    }
+
+    .see-all {
+        padding: 10px 30px;
+        gap: 15px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    /* End selling section responsive */
+
+
+
+
+
+
+
 }
+
 /* End Responsive */
