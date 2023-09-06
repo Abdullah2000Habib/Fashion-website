@@ -46,7 +46,23 @@ src:("../fonts/ELEPHNT.TTF");
 font-family: "ELEPHNT", serif;
 }
 
-
+.heading-section{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    text-align: center;
+}
+.heading-section h4{
+    color: var(--main-color);
+    font-family: 'Roboto Slab', serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+.heading-section span{
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 500;
+}
 /* End Global Style */
 
 /* Start Header Style */
@@ -152,18 +168,153 @@ color: var(--main-color);
 }
 
 
-.hero-image{
-width: 570px;
-height: 717px;
+    .hero-image{
+    width: 570px;
+    height: 717px;
+    }
+    .hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bg-image-color);
+    border-radius:150px 40px 150px 60px;
+    }
+/* End Hero Section Style */
+
+
+/* Start selling Section Style */
+.section-two{
+    background-color: var(--white-color);
+    margin-bottom: 185px;
 }
-.hero-image img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-background-color: var(--bg-image-color);
-border-radius:150px 40px 150px 60px;
+.best-selling-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-/* End Section Style */
+.best-selling-wrapper .cards-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.cards-wrapper .card{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap:51px;
+}
+.cards-wrapper .card .card-image{
+    width: 100%;
+    height: 566px;
+    border-radius: 6px;
+}
+.cards-wrapper .card:nth-child(1) .card-image {
+    width: 100%;
+    height: 566px;
+    background-color: #93B9A2;
+}
+.cards-wrapper .card:nth-child(2) >.card-image  {
+    width: 100%;
+    height: 566px;
+    background-color: #A9D4BA;
+}
+.cards-wrapper  .card:nth-child(3) .card-image{
+    width: 100%;
+    height: 566px;
+    background-color: #CADCD0;
+}
+
+
+.cards-wrapper .card .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards-wrapper .card .card-details{
+    width:313px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.cards-wrapper .card .card-details span{
+color: var(--secondary-color);
+text-align: center;
+font-size: 22px;
+font-weight: 600;
+
+}
+.cards-wrapper .card .card-details .product-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards-wrapper .card .card-details .product-details .price{
+    color: var(--light-black-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cards-wrapper .card .card-details .product-details .rate{
+display: flex;
+align-items: center;
+gap:9px;
+}
+.cards-wrapper .card .card-details .product-details .rate span{
+    color: var(--light-black-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+.see-all {
+    display: inline-block;
+    padding: 16px 55px;
+    display: flex;
+    align-items: center;
+    gap:18px;
+    align-self: center;
+    border-radius: 3px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+
+/* End selling Section Style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Start Responsive */
 @media screen and (max-width: 1024px){
@@ -223,6 +374,77 @@ border-radius:150px 40px 150px 60px;
         display: none;
     }
     /* End Hero Section responsive */
+
+
+    /* Start Heading section responsive */
+    .heading-section{
+    gap: 20px;
+    text-align: center;
+    }
+    .heading-section h4{
+        font-size: 35px;
+    }
+    .heading-section span{
+        font-size: 18px;
+    }
+    /* End Heading section responsive */
+
+    /* Start selling section responsive */
+
+    .section-two{
+        margin-bottom: 100px;
+
+    }
+    .best-selling-wrapper .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        gap:1rem;
+        margin-top: 60px;
+
+    }
+    .cards-wrapper .card{
+        align-self: center;
+        flex: 1;
+        gap:35px;
+        margin: 0 5px;
+    }
+    .cards-wrapper .card .card-image{
+        max-height: 470px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .cards-wrapper .card .card-details{
+        width:280px;
+        gap:6px;
+    }
+    .cards-wrapper .card .card-details span{
+    font-size: 18px;
+    }
+    .cards-wrapper .card .card-details .product-details .price{
+        font-size: 16px;
+    }
+
+    .cards-wrapper .card .card-details .product-details .rate{
+    gap:4px;
+    }
+    .cards-wrapper .card .card-details .product-details .rate span{
+        font-size: 16px;
+    }
+    .cards-wrapper .card .card-details .product-details .rate  svg{
+        width: 15px;
+    }
+
+    .see-all {
+        padding: 10px 30px; 
+        gap:15px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    /* End selling section responsive */
 }
 
 @media screen and (min-width:  1025px)  and (max-width: 1727px) {
@@ -283,5 +505,67 @@ border-radius:150px 40px 150px 60px;
     height: 570px;
     }
     /* End Hero Section responsive */   
+    /* Start Heading section responsive */
+    .heading-section{
+    gap: 20px;
+    text-align: center;
+    }
+    .heading-section h4{
+        font-size: 35px;
+    }
+    .heading-section span{
+        font-size: 18px;
+    }
+    /* End Heading section responsive */
+
+    /* Start selling section responsive */
+
+    .section-two{
+        margin-bottom: 100px;
+    }
+    .best-selling-wrapper .cards-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        gap:2rem;
+    }
+    .cards-wrapper .card{
+        width: 385px;
+        gap:35px;
+    }
+    .cards-wrapper .card .card-image{
+        max-height: 470px;
+    }
+
+
+    .cards-wrapper .card .card-details{
+        width:280px;
+        gap:6px;
+    }
+    .cards-wrapper .card .card-details span{
+    font-size: 18px;
+    }
+    .cards-wrapper .card .card-details .product-details .price{
+        font-size: 16px;
+    }
+
+    .cards-wrapper .card .card-details .product-details .rate{
+    gap:4px;
+    }
+    .cards-wrapper .card .card-details .product-details .rate span{
+        font-size: 16px;
+    }
+    .cards-wrapper .card .card-details .product-details .rate  svg{
+        width: 15px;
+    }
+
+    .see-all {
+        padding: 10px 30px; 
+        gap:15px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    /* End selling section responsive */
 }
 /* End Responsive */
