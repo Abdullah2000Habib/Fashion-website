@@ -466,7 +466,65 @@ header {
 
 
 
+/* Start Feedback Section Style */
+.section-five {
+    background-color: var(--white-color);
+    margin-bottom: 181px;
+}
 
+.section-five .feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-five .feedback-wrapper .cards-wrapper {
+    margin-top: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-five .feedback-wrapper .cards-wrapper .card {
+    width: 434px;
+    height: 300px;
+    display: block;
+    border-radius: 3px;
+    background: var(--white-color);
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 29px 7px;
+}
+
+.section-five .feedback-wrapper .cards-wrapper .card:nth-child(2) {
+    background-color: var(--bg-color);
+}
+
+.section-five .feedback-wrapper .cards-wrapper h4 {
+    color: var(--main-color);
+    font-family: "roboto";
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+
+.section-five .feedback-wrapper .cards-wrapper span {
+    color: var(--main-color);
+    font-family: "Roboto Slab", Serif;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.section-five .feedback-wrapper .cards-wrapper p {
+    width: 390px;
+    color: var(--grey-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+/* End Feedback Section Style */
 
 
 
@@ -803,7 +861,67 @@ header {
     } */
 
 
+    /* Start Feedback Section Style */
+    .section-five {
+        background-color: var(--white-color);
+        margin-bottom: 100px;
+    }
 
+    .section-five .feedback-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .section-five .feedback-wrapper .cards-wrapper {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper .card {
+        display: block;
+        width: 100%;
+        height: 300px;
+        border-radius: 3px;
+        background: var(--white-color);
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper .card:nth-child(2) {
+        background-color: var(--bg-color);
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper h4 {
+        color: var(--main-color);
+        font-family: "roboto";
+        font-size: 50px;
+        font-weight: 500;
+
+
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper span {
+        color: var(--main-color);
+        font-family: "Roboto Slab", Serif;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper p {
+        width: fit-content;
+        color: var(--grey-color);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    /* End Feedback Section Style */
 
 
 }
@@ -1057,7 +1175,65 @@ header {
     /* End design section responsive */
 
 
+    /* Start Feedback Section Style */
+    .section-five {
+        background-color: var(--white-color);
+        margin-bottom: 100px;
+    }
 
+    .section-five .feedback-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .section-five .feedback-wrapper .cards-wrapper {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper .card {
+        display: block;
+        width: 32%;
+        height: 300px;
+        border-radius: 3px;
+        background: var(--white-color);
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+        padding: 29px;
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper .card:nth-child(2) {
+        background-color: var(--bg-color);
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper h4 {
+        color: var(--main-color);
+        font-family: "roboto";
+        font-size: 50px;
+        font-weight: 500;
+
+
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper span {
+        color: var(--main-color);
+        font-family: "Roboto Slab", Serif;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .section-five .feedback-wrapper .cards-wrapper p {
+        width: fit-content;
+        color: var(--grey-color);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    /* End Feedback Section Style */
 
 
 
