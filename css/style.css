@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Start Global Style */
+:root {
+    --main-color:#224F34;
+    --light-green-color:#267D49;
+    --bg-color:#C2EFD4;
+    --button-color:#A3F3BE;
+    --white-color:#ffffff;
+    --secondary-color:#373737;
+    --light-black-color:#454545;
+    --grey-color:#6F6F6F;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body {
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Rufina', serif;
+font-family: "ELEPHNT"; */
+}
+
+ul {
+list-style: none;
+}
+
+li{
+
+}
+
+a{
+text-decoration: none;
+}
+
+@font-face {
+src:("../fonts/ELEPHNT.TTF");
+font-family: "ELEPHNT", serif;
+}
+
+
+/* End Global Style */
+
+/* Start Header Style */
+header{
+    background-color: var(--bg-color);
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:55px 0;
+}
+
+
+.header-wrapper .logo h2 {
+font-family: "Elephant", serif;
+font-size: 44px;
+font-weight: 700;
+color: var(--main-color);
+}
+
+.header-wrapper .header-links nav ul{
+    display: flex;
+    align-items: center;
+    gap:57px;
+}
+.header-wrapper .header-links nav ul a{
+    color: var(--main-color);
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header-wrapper .login-button a{
+    display: inline-block;
+    padding: 11px 41px;
+    border-radius: 3px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+/* End Header Style */
