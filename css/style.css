@@ -527,6 +527,139 @@ header {
 /* End Feedback Section Style */
 
 
+/* Start Footer Section Style */
+footer {
+    background-color: var(--main-color);
+    padding-top: 89px;
+    padding-bottom: 191px;
+    color: var(--white-color);
+}
+
+footer .footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .footer-wrapper .cloumn-one {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer .footer-wrapper .cloumn-one .logo h2 {
+
+    font-family: "Elephant", serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 44px;
+}
+
+footer .footer-wrapper .cloumn-one span {
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+footer .footer-wrapper .cloumn-one .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-wrapper .cloumn-one .icons a {
+    font-size: 12px;
+}
+
+
+footer .footer-wrapper .cloumn-two {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer .footer-wrapper .cloumn-two .links-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+footer .footer-wrapper .cloumn-two ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.cloumn-two ul li a {
+    display: inline-block;
+    color: var(--bg-color);
+
+}
+
+footer .footer-wrapper .cloumn-four {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+
+footer .footer-wrapper .cloumn-four span {
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+
+
+footer .footer-wrapper .cloumn-four form .submit-button {
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 2px solid var(--button-color);
+
+}
+
+footer .footer-wrapper .cloumn-four form .submit-button input {
+    padding: 14px 28px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 400px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .footer-wrapper .cloumn-four form .submit-button input::placeholder {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer .footer-wrapper .cloumn-four form .submit-button button {
+    padding: 14px 28px;
+    background-color: var(--button-color);
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* End Footer Section Style */
+
+
 
 
 
@@ -923,6 +1056,123 @@ header {
 
     /* End Feedback Section Style */
 
+    /* Start Footer Section Style */
+    footer {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    footer .footer-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    footer .footer-wrapper .cloumn-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    footer .footer-wrapper .cloumn-one .logo h2 {
+
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    footer .footer-wrapper .cloumn-one span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    footer .footer-wrapper .cloumn-one .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 120px;
+    }
+
+    footer .footer-wrapper .cloumn-one .icons a svg {
+        width: 25px;
+    }
+
+
+    footer .footer-wrapper .cloumn-two {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+    footer .footer-wrapper .cloumn-two .links-title {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    footer .footer-wrapper .cloumn-two ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+
+    .cloumn-two ul li a {
+        display: inline-block;
+        color: var(--bg-color);
+
+    }
+
+    footer .footer-wrapper .cloumn-four {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+
+    footer .footer-wrapper .cloumn-four span {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+
+
+    footer .footer-wrapper .cloumn-four form .submit-button {
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: 2px solid var(--button-color);
+        max-width: 100%;
+        margin: 0 auto;
+
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button input {
+        padding: 5px 10px;
+        width: 150px;
+        font-size: 14px;
+
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button input::placeholder {
+        font-size: 16px;
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* End Footer Section Style */
+
 
 }
 
@@ -1234,7 +1484,113 @@ header {
     }
 
     /* End Feedback Section Style */
+    /* Start Footer Section Style */
+    footer {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
 
+    footer .footer-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    footer .footer-wrapper .cloumn-one {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    footer .footer-wrapper .cloumn-one .logo h2 {
+
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    footer .footer-wrapper .cloumn-one span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    footer .footer-wrapper .cloumn-one .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 120px;
+    }
+
+    footer .footer-wrapper .cloumn-one .icons a svg {
+        width: 25px;
+    }
+
+
+    footer .footer-wrapper .cloumn-two {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    footer .footer-wrapper .cloumn-two .links-title {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    footer .footer-wrapper .cloumn-two ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+    .cloumn-two ul li a {
+        display: inline-block;
+        color: var(--bg-color);
+
+    }
+
+    footer .footer-wrapper .cloumn-four {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    footer .footer-wrapper .cloumn-four span {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+
+
+    footer .footer-wrapper .cloumn-four form .submit-button {
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: 2px solid var(--button-color);
+
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button input {
+        padding: 10px 20px;
+        width: 360px;
+        font-size: 16px;
+
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button input::placeholder {
+        font-size: 16px;
+    }
+
+    footer .footer-wrapper .cloumn-four form .submit-button button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* End Footer Section Style */
 
 
 
